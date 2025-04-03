@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/inscription.css">
+    <link rel="stylesheet" type="text/css" href="../JavaScript/inscription.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+          Nouvelle <br />
+          Conférence
+        </h1>
+        <nav>
+          <h3>24&ndash;25 mars 2024 &mdash; Ottawa, ON</h3>
+        </nav>
+        <nav>
+          <ul>
+            <li><a id="bouton" href="index.html" role="button">Acceuil</a></li>
+            
+            <li>
+              <a id="bouton" href="html/conferencier.html" role="button">Conférenciers</a>
+            </li>
+            
+            <li>
+              <a id="bouton" href="html/programme.html" role="button">Programme</a>
+            </li>
+            
+            <li><a id="bouton" href="html/venu.html" role="button">Venue</a></li>
+            
+            <li>
+              <a id="bouton" href="html/inscription.html" role="button">Inscription</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <div>
+        <h1 class="title">Inscription</h1>
+        <p class="inscription">Suspendisse vel leo porttitor, fringilla turpis in, ultrices eros. Integer sit amet interdum lacus. Nunc tempor in neque ut sagittis. Suspendisse potenti. Vestibulum vestibulum augue vel nulla scelerisque, sodales vestibulum dolor auctor.</p>
+    </div>
+    <section class="main-container">
+        <div class="left-content">
+            <div class="inline-elements">
+                <h2 class="title">Achat de passe pour la conférence</h2>
+                <h5>99$ / place</h5>
+            </div>
+            <p>
+                In gravida fringilla fringilla. Ut at mi massa. Curabitur sed
+                rhoncus orci, sed pulvinar lectus. Praesent tempor nisi id facilisis
+                congue. Nullam eu convallis turpis, vel mattis turpis. In cursus,
+                augue in feugiat posuere, tortor velit congue mi, at volutpat nibh
+                turpis a tellus.
+            </p>
+            <h4>Bienvenue !</h4>
+            <ul>
+                <li>Cras eu est sit amet elit placerat venenatis.</li>
+                <li>Proin bibendum justo vestibulum accumsan rhoncus.</li>
+                <li>Pellentesque gravida risus id eros aliquet tempor.</li>
+                <li>Sed in odio at dolor posuere laoreet.</li>
+                <li>Nullam fermentum leo at dignissim varius.</li>
+            </ul>
+        </div>
+        <div class="right-content">
+            <form action="#" method="post" class="small-form" id="inscriptionForm">
+                <fieldset>
+                    <legend><br>Formulaire d'inscription</legend>
+                    <label>
+                        Nom complet
+                        <input type="text" name="name" placeholder="Nom complet" required>
+                    </label>
+                    <label>
+                        Adresse courriel
+                        <input type="email" name="email" placeholder="Adresse courriel" required>
+                    </label>
+                    <label>
+                        Téléphone
+                        <input type="tel" class="form-control" id="telephone" name="telephone" pattern="\+1\(\d{3}\) \d{3}-\d{4}" required placeholder="+1(XXX) XXX-XXXX">
+                    </label>
+                    <label>
+                        Nombre de places
+                        <br><br><select name="quantity" required>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </label>
+                    <div class="container">
+                        <!-- Boutons radios pour choisir la session -->
+                        <div class="form-group">
+                            <label>Choisissez votre session :</label>
+                            <div class="radio-group">
+                                <input type="radio" name="session" id="session1" value="Session A" required>
+                                <label for="session1">Session A</label>
+                
+                                <input type="radio" name="session" id="session2" value="Session B">
+                                <label for="session2">Session B</label>
+                
+                                <input type="radio" name="session" id="session3" value="Session C">
+                                <label for="session3">Session C</label>
+                
+                                <input type="radio" name="session" id="session4" value="Session D">
+                                <label for="session4">Session D</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Cases à cocher pour les options supplémentaires -->
+                        <div class="form-group">
+                            <label>Options supplémentaires :</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="option1" name="options" value="Atelier 1">
+                                <label for="option1">Atelier 1</label>
+                
+                                <input type="checkbox" id="option2" name="options" value="Atelier 2">
+                                <label for="option2">Atelier 2</label>
+                
+                                <input type="checkbox" id="option3" name="options" value="Service de navette">
+                                <label for="option3">Service de navette</label>
+                
+                                <input type="checkbox" id="option4" name="options" value="Repas inclus">
+                                <label for="option4">Repas inclus</label>
+                            </div>
+                        </div>
+                        <label>
+                            Commentaire
+                            <textarea name="comments"></textarea>
+                        </label>
+                    </div>
+                </fieldset>
+                <button class="btn btn-default" type="submit" name="submit">Acheter</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <small>&#169;Nouvelle Conférence</small>
+        <nav>
+            <ul>
+                <li><a href="../index.html" role="button">Accueil</a></li>
+                <li><a href="conferencier.html" role="button">Conférenciers</a></li>
+                <li><a href="programme.html" role="button">Programme</a></li>
+                <li><a href="venu.html" role="button">Venue</a></li>
+                <li><a href="inscription.html" role="button">Inscription</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Récapitulatif de l'inscription</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body" id="modalBody">
+                    <!-- Les données saisies dans le formulaire seront affichées ici -->
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" id="saveData">Enregistrer</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Fonction pour récupérer les données du formulaire et les afficher dans la modal
+        $("#inscriptionForm").submit(function(e) {
+            e.preventDefault(); // Empêche la soumission du formulaire
+            var formData = $(this).serializeArray(); // Récupère les données du formulaire sous forme d'array
+            var modalBody = $("#modalBody");
+            modalBody.empty(); // Vide le contenu précédent de la modal
+            $.each(formData, function(index, field) {
+                modalBody.append("<p><strong>" + field.name + ":</strong> " + field.value + "</p>");
+            });
+            $('#myModal').modal('show'); // Affiche la modal
+        });
+
+        // Fonction pour enregistrer les données
+        $("#saveData").click(function() {
+            // Ici, vous pouvez ajouter le code pour enregistrer les données dans votre base de données ou effectuer toute autre action nécessaire
+            alert("Données enregistrées avec succès !");
+            $('#myModal').modal('hide'); // Ferme la modal après l'enregistrement
+        });
+    </script>
+</body>
+</html>
